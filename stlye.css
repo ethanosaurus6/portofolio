@@ -1,0 +1,209 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1c26d7,  #0a192f);    
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+p {
+    color: #cfcfcf;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+
+/* Style untuk tombol navigasi */
+.nav-buttons {
+    margin-bottom: 40px;
+}
+
+/* Style untuk tombol navigasi */
+.nav-button {
+    font-size: 1rem;
+    font-size: 16px;
+    color: #ffffff; /* Warna teks tombol */
+    background: none; /* Menghapus background */
+    border: none; /* Menghapus border */
+    padding: 5px 10px; /* Menambahkan padding untuk kenyamanan */
+    cursor: pointer;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+/* Mengubah warna teks saat hover */
+.nav-button:hover {
+    color: #007bff; /* Mengubah warna teks menjadi biru saat hover */
+}
+
+/* Style untuk bagian Projects */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: #ffffff;
+    color: #1c26d7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Style untuk tombol ikon */
+.icon-buttons {
+    margin-top: 40px;
+}
+
+.icon-button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; 
+    background: url('wave.svg') repeat-x; 
+    animation: wave-animation 10s linear infinite;
+}
+
+@keyframes wave-animation {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+} */
+
+.bubbles {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Pastikan gelembung di belakang konten */
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: bubble-float 6s infinite ease-in;
+}
+
+@keyframes bubble-float {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        bottom: 100vh;
+        transform: translateX(-50px);
+    }
+}
+
+.bubble:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(5) {
+    left: 90%;
+    animation-delay: 3s;
+}
+
+.skill-item {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px; /* Ukuran ikon */
+    color: white; /* Warna ikon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

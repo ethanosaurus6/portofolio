@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="stlye.css"> <!-- Pastikan nama file benar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Tombol Navigasi -->
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="scrollToSection('about-me')">About Me</button>
+        <button class="nav-button" onclick="scrollToSection('projects')">Projects</button>
+    </div>
+
+    <!-- Bagian About Me -->
+    <section id="about-me">
+        <h1>Hi, I'm Ethalia Dewi Utari</h1>
+        <h4>About Me</h4>
+        <p>
+            Hi, I'm Ethalia Dewi Utari, a sixth-semester student majoring in Informatics Engineering at Brawijaya University. I have a strong interest in software development and enjoy solving problems through technology. I am proficient in programming languages like Kotlin, Python, and Java, and have experience in building web applications, mobile apps, and database systems.        
+        </p>
+    </section>
+
+    <section id="skills">
+        <h4>Skills</h4>
+        <div class="skill-item">
+            <i class="fab fa-korvue"></i> <!-- Ikon Kotlin -->
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-python"></i> <!-- Ikon Python -->
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-java"></i> <!-- Ikon Java -->
+        </div>
+    </section>
+
+    <!-- Bagian Projects -->
+    <section id="projects">
+        <h4>Projects</h4>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project 1: Website Portofolio</h3>
+                <p>Ini adalah proyek pertama saya dalam membuat website portofolio menggunakan HTML, CSS, dan JavaScript.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Aplikasi To-Do List</h3>
+                <p>Aplikasi sederhana untuk mengelola tugas sehari-hari dengan fitur tambah, hapus, dan edit tugas.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3: Sistem Manajemen Inventaris</h3>
+                <p>Sistem untuk mengelola inventaris barang dengan fitur CRUD (Create, Read, Update, Delete).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tombol Ikon -->
+    <div class="icon-buttons">
+        <button class="icon-button" id="linkedin" onclick="openLink('https://www.linkedin.com')">
+            <i class="fa-brands fa-linkedin"></i>
+        </button>
+        <button class="icon-button" id="email" onclick="openLink('mailto:ethalia@example.com')">
+            <i class="fa-solid fa-envelope"></i>
+        </button>
+        <button class="icon-button" id="github" onclick="openLink('https://github.com')">
+            <i class="fa-brands fa-github"></i>
+        </button>
+    </div>
+
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Hubungkan file JavaScript -->
+</body>
+</html>
